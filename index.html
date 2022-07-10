@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Room</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/room.css'>
+</head>
+<body>
+
+    <header id="nav">
+       <div class="nav--list">
+            <button id="members_button">
+                <img src="icons/burger.png"  width="24" height="24" viewBox="0 0 24 24"/>
+            </button>
+
+            <a>
+                <h3 id="logo">
+                    <img src="./images/navi-logo-white.png" alt="Site Logo">
+                    <span>Navi</span>
+                </h3>
+            </a>
+       </div>
+
+        <div id="nav_links">
+            <button id="chat_button"><img src="icons/message.png"  width="24" height="24" viewBox="0 0 24 24"/></button>
+            
+            <a class="nav_link" id="leave-btn" href="lobby.html">
+                Leave Room
+                <img src="icons/leave.png"  width="24" height="24" viewBox="0 0 24 24"/>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div id="room_container">
+
+            <section id="members_container">
+
+            <div id="members_header">
+                <p>Participants</p>
+                <strong id="members_count">0</strong>
+            </div>
+
+            <div id="member_list">
+                <!--
+                <div class="member_wrapper" id="member_1_wrapper">
+                    <span class="green_icon"></span>
+                    <p class="member_name">Ivan</p>
+                </div>
+                -->
+
+                
+            </div>
+
+            </section>
+
+            <section id="stream_container">
+
+                <div id="stream_box">
+
+                </div>
+
+                <div id="streams_container">
+                    <!--
+                    <div class="video_container" id="user-container-1">
+                        <h1>1</h1>
+                    </div>
+
+                    <div class="video_container" id="user-container-2">
+                        <h1>2</h1>
+                    </div>
+                    -->
+
+                    </div>
+
+                </div>
+
+                
+                <div class="stream_actions">
+                    <button class="active" id="camera-btn">
+                        <img src="icons/vc.png"  width="24" height="24" viewBox="0 0 24 24"/>
+                    </button>
+
+                    <button class="active" id="mic-btn">
+                        <img src="icons/mic.png"  width="24" height="24" viewBox="0 0 24 24"/>
+                    </button> 
+
+                    <button id="screen-btn">
+                        <img src="icons/screen.png"  width="24" height="24" viewBox="0 0 24 24"/>
+                    </button>
+
+                </div>
+            </section>
+
+            <section id="messages_container">
+
+                <div id="messages">
+                    <!--
+                    <div class="message_wrapper">
+                        <div class="message_body_bot">
+                            <strong class="message_author_bot">🤖 Navi Bot</strong>
+                            <p class="message_text_bot">Welcome to the room, Don't be shy, say hello!</p>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+
+                <form id="message_form">
+                    <input type="text" name="message" placeholder="Send a message...." />
+                </form>
+
+            </section>
+        </div>
+    </main>
+    
+</body>
+<script type="text/javascript" src="js/AgoraRTC_N-4.11.1.js"></script>
+<script type="text/javascript" src="js/agora-rtm-sdk-1.4.4.js"></script>
+<script type="text/javascript" src="js/room.js"></script>
+<script type="text/javascript" src="js/room_rtm.js"></script>
+<script type="text/javascript" src="js/room_rtc.js"></script>
+</html>

@@ -1,0 +1,137 @@
+body{
+  background-color: #1b1b1b;
+  color: #fff !important;
+}
+#form_container, #join-form_container {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: #262625;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+
+#lobby_form {
+  padding: 2em;
+}
+
+#form_container_header {
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #6441a4;
+  margin: 0;
+  font-size: 18px;
+  font-size: 300;
+  line-height: 0;
+}
+
+.form_field_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.form_field_wrapper label {
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form_field_wrapper input {
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  padding: 16px 20px;
+  font-size: 15px;
+  background-color: #3f434a;
+}
+
+.form_field_wrapper button[type='submit'] {
+  margin-top: 32px;
+  cursor: pointer;
+  background-color: #6441a4;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.form_field_wrapper button[type='submit'] img {
+  fill: #ede0e0;
+  width: 20px;
+}
+
+
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  min-height: 10vh;
+  align-items: center;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  flex:1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1 1 40rem;
+}
+
+.home .image img{
+
+  width:50%;
+  padding:1rem;
+  animation:float 3s linear infinite;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.home .content h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  color:rgb(255, 255, 255);
+}
+
+.home .content p{
+  text-align: center;
+  font-size: 1.7rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
